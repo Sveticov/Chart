@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btn" layoutX="32.0" layoutY="354.0" mnemonicParsing="false" onAction="#onStart" text="Button" />
+      <LineChart fx:id="charts0" layoutX="32.0" layoutY="55.0" prefHeight="250.0" prefWidth="800.0">
+        <xAxis>
+            <NumberAxis side="BOTTOM" fx:id="xAxis" label="x axis" lowerBound="0" upperBound="3" tickUnit="1"/>
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yAxis" side="LEFT" label="y axis" lowerBound="0" upperBound="3" tickUnit="0.1" />
+        </yAxis>
+      </LineChart>
+      <Button fx:id="btn1" layoutX="128.0" layoutY="354.0" mnemonicParsing="false" onAction="#onChart" text="Button" />
+   </children>
+</AnchorPane>
